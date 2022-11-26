@@ -66,8 +66,8 @@ public abstract class Mammals extends Animals {
 
     @Override
     public String toString() {
-        return super.toString() + " Среда обитания " + getHabitat() + '\'' +
-                ", Скорость передвижения " + getMovementSpeed();
+        return super.toString() + ", Среда обитания - " + getHabitat() +
+                ", Скорость передвижения - " + getMovementSpeed() + " км/ч, ";
     }
 
     @Override
