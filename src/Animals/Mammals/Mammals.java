@@ -4,7 +4,7 @@ import Animals.Animals;
 
 import java.util.Objects;
 
-public class Mammals extends Animals {
+public abstract class Mammals extends Animals {
     private String habitat;
     private float movementSpeed;
 

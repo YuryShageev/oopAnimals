@@ -18,6 +18,8 @@ public class Herbivore extends Mammals {
         this.foodType = validateLines(foodType);
     }
 
+
+
     public String getFoodType() {
         return foodType;
     }
@@ -38,5 +40,10 @@ public class Herbivore extends Mammals {
     @Override
     public int hashCode() {
         return Objects.hash(super.hashCode(), foodType);
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + " Питается " + getFoodType() + '\'';
     }
 }

@@ -2,7 +2,7 @@ package Animals;
 
 import java.util.Objects;
 
-public class Animals {
+public abstract class Animals {
 
     private String name;
     private int age;
