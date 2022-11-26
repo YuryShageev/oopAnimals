@@ -1,3 +1,5 @@
+package Animals;
+
 import java.util.Objects;
 
 public class Animals {
@@ -60,8 +62,8 @@ public class Animals {
 
     @Override
     public String toString() {
-        return "Название животного" + name + '\'' +
-                ", Возраст животного " + age;
+        return "Название животного" + getName() + '\'' +
+                ", Возраст животного " + getAge();
     }
 
     @Override
