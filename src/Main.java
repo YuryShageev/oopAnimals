@@ -1,4 +1,5 @@
 import Animals.Amphibias.Amphibia;
+import Animals.Birds.Flying;
 import Animals.Mammals.Carnivore;
 import Animals.Mammals.Herbivore;
 
@@ -44,6 +45,18 @@ public class Main {
             amphibias[i].action();
         }
 
+        Flying[] flyings = {
+                new Flying("Чайка", 6, "Прибрежные территории", "Летает"),
+                new Flying("Альбатрос", 3, "Север океанов", "Летает"),
+                new Flying("Сокол", 8, "Холмистая и горная местость", "Летает")
+        };
+
+        for (int i = 0; i < flyings.length; i++) {
+            System.out.println(flyings[i]);
+            flyings[i].eat();
+            flyings[i].go();
+            flyings[i].action();
+        }
 
     }
 }
