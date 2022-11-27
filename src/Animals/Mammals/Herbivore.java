@@ -18,7 +18,19 @@ public class Herbivore extends Mammals {
         this.foodType = validateLines(foodType);
     }
 
+    public void action() {
+        System.out.println("Попастись");
+    }
 
+    @Override
+    public void eat() {
+        System.out.println("Растительная пища");
+    }
+
+    @Override
+    public void go() {
+        System.out.println("Ходят ногами");
+    }
 
     public String getFoodType() {
         return foodType;
@@ -34,7 +46,9 @@ public class Herbivore extends Mammals {
         if (!(o instanceof Herbivore)) return false;
         if (!super.equals(o)) return false;
         Herbivore herbivore = (Herbivore) o;
-        return foodType.equals(herbivore.foodType);
+        return getName() == herbivore.getName() && Objects.equals(getName(), herbivore.getName()) && Objects.equals(getAge(), herbivore.getAge())
+                && Objects.equals(getHabitat(), herbivore.getHabitat()) && Objects.equals(getMovementSpeed(), herbivore.getMovementSpeed())
+                && Objects.equals(getFoodType(), herbivore.getFoodType());
     }
 
     @Override
@@ -44,6 +58,6 @@ public class Herbivore extends Mammals {
 
     @Override
     public String toString() {
-        return super.toString() + " Питается " + getFoodType() + '\'';
+        return super.toString() + " Пища - " + getFoodType();
     }
 }

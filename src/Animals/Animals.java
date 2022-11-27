@@ -62,8 +62,8 @@ public abstract class Animals {
 
     @Override
     public String toString() {
-        return "Название животного" + getName() + '\'' +
-                ", Возраст животного " + getAge();
+        return "Название животного - " + getName() +
+                ", Возраст животного - " + getAge();
     }
 
     @Override
